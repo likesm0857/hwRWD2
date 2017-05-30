@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>歐耶咖啡</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <link href="css/material-scrolltop.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/material-scrolltop.js"></script>
+    <script src="js/script.js"></script>
+  <SCRIPT Language="JavaScript">
+<!--
+// Valor工作室小誌 [valor Studio]
+var speed = 3000
+var img= new Array()
+var url= new Array()
+var current = 0
+
+img[0] = new Image(); img[0].src = "./img/3.jpeg";
+img[1] = new Image(); img[1].src = "./img/4.jpeg";
+img[2] = new Image(); img[2].src = "./img/5.jpeg";
+img[3] = new Image(); img[3].src = "./img/2.jpeg";
+
+
+function start()
+{
+current++
+if(current >=img.length) current = 0
+document.imgs.src = img[current].src
+setTimeout("start()",speed);
+}
+
+function go()
+{window.location = url[current]}
+//-->
+</SCRIPT>
+
+
+</HEAD>
+
+
+
+</head>
+<BODY onLoad="setTimeout('start()',speed);">
+  <header>
+          <div class="container clear">
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+              <li><a href="#">買咖啡</a></li>
+              <li><a href="#">咖啡器材</a></li>
+              <li><a href="#">咖啡教室</a></li>
+              <li><a href="#">訂購說明</a></li>
+              <li><a href="#">夥伴招募</a></li>
+              <li><a href="#">線上購物專區</a></li>
+        </ul>
+        <div  class="logomnav2">
+          <div class ="logo">
+              <img src="./img/orsir_LOGOs.png" alt="logo" id="logo">
+              </div>
+              <div class ="nav2">
+                  <ul>
+                      <li><a href="#">買咖啡</a></li>
+                      <li><a href="#">咖啡器材</a></li>
+                      <li><a href="#">咖啡教室</a></li>
+                      <li><a href="#">訂購說明</a></li>
+                      <li><a href="#">夥伴招募</a></li>
+                      <li><a href="#">線上購物專區</a></li>
+                      <li class="search">
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div><!-- end header div-->
+      </header>
+  <main>
+        <div class="container">
+
+            <a href="javascript:go()"><img src="./img/2.jpeg" alt="cover-photo" id="cover-photo" name="imgs"></a>
+            <h1>滴滴香濃，意猶未盡</h1>
+            <div class="introduce">
+              <section class="introduce">
+
+                <a href="#"><img src="./img/pexels-photo-57690.jpeg" alt="left" id="left"
+                   onmouseover="this.src='./img/pexels-photo-57690.png';"
+                   onmouseout="this.src='./img/pexels-photo-57690.jpeg';" </a>
+
+              </section>
+              <section class="introduce">
+                <a href="#"><img src="./img/pexels-photo-299432.jpeg" alt="mid" id="mid"
+                    onmouseover="this.src='./img/pexels-photo-299432.png';"
+                    onmouseout="this.src='./img/pexels-photo-299432.jpeg';"
+                </a>
+              </section>
+              <section class="introduce">
+                <a href="#"><img src="./img/pexels-photo-312418.jpeg" alt="right" id="right"
+                    onmouseover="this.src='./img/pexels-photo-312418.png';"
+                    onmouseout="this.src='./img/pexels-photo-312418.jpeg';"
+                </a>
+              </section>
+            </div>
+        </div><!-- end main div-->
+
+    </main>
+    <footer>
+  <p>Follow us</p>
+  <div class="social">
+    <a href="#"><img src="./img/facebook.png" alt="facebook"></a>
+    <a href="#"><img src="./img/instagram.png" alt="instagram" id="special"></a>
+    <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
+  </div>
+  <p>Copyright © 2017 Swan Office Park15-23 Bucharest North AvenueVoluntari-Ilfov </p>
+</footer>
+</body>
+
+</html>>
